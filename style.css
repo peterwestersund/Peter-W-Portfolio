@@ -140,8 +140,57 @@ body {
     z-index: 0;
 }
 
+.buttonWrapper {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin-top: 35px;
+}
 
-
+.button-50 {
+    appearance: button;
+    background-color: #FFBD35;
+    background-image: none;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0) 4px 4px 0 0,#000 4px 4px 0 1px;
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 5px 10px 0;
+    overflow: visible;
+    width: 145px;
+    height: 45px;
+    text-align: center;
+    text-transform: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  
+  .button-50:focus {
+    text-decoration: none;
+  }
+  
+  .button-50:hover {
+    text-decoration: none;
+  }
+  
+  .button-50:active {
+    box-shadow: rgba(0, 0, 0, .125) 0 3px 5px inset;
+    outline: 0;
+  }
+  
+  .button-50:not([disabled]):active {
+    box-shadow: rgb(0, 0, 0) 2px 2px 0 0, #000 2px 2px 0 1px;
+    transform: translate(2px, 2px);
+  }
+  
 /* .container {
     display: grid;
     grid-template-rows: 54px 1fr 1fr 1fr 1fr;
