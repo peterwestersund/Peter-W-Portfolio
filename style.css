@@ -9,5 +9,158 @@ body {
     background-color: #8267BE;
 }
 
+.container {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 960px 1fr;
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1440px;
+}
 
+.backgroundColor {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    background-color: #3FA796;
+    border: 3px solid black;
+}
+
+.mainHeader {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    z-index: 2;
+    margin-left: 136px;
+    margin-top: 64px;
+
+}
+
+.headerBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    height: 190px;
+    width: 564px;
+    background-color: #FFBD35;
+    margin-top: 35px;
+    margin-left: 101px;
+    border: 5px solid black;
+    z-index: 1;
+}
+
+.headerBoxBackground {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 564px;
+    height: 190px;
+    background-color: #000000;
+    margin-top: 42px;
+    margin-left: 108px;
+    z-index: 0;
+}
+
+.titleHeader {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 271px;
+    text-align: center;
+    z-index: 2;
+}
+
+.titleBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 758px;
+    height: 72px;
+    background-color: #FFBD35;
+    margin-top: 265px;
+    margin-left: 101px;
+    border: 5px solid black;
+    z-index: 1;
+}
+
+.titleBoxBackground {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 758px;
+    height: 72px;
+    background-color: #000000;
+    margin-top: 271px;
+    margin-left: 104px;
+    z-index: 0;
+}
+
+.selfImage {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 383px;
+    margin-left: 101px;
+}
+
+.aboutText {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 295px;
+    height: 364px;
+    margin-top: 407px;
+    margin-left: 546px;
+    z-index: 2;
+}
+
+.aboutTextBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 334px;
+    height: 412px;
+    background-color: #FFBD35;
+    margin-top: 383px;
+    margin-left: 523px;
+    border: 5px solid black;
+    z-index: 1;
+}
+
+.aboutTextBoxBg {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 334px;
+    height: 412px;
+    background-color: #000000;
+    margin-top: 388px;
+    margin-left: 528px;
+    z-index: 0;
+}
+
+
+
+/* .container {
+    display: grid;
+    grid-template-rows: 54px 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    grid-gap: 1px;
+    list-style-type: none;
+    margin: 0 auto;
+    max-width: 1440px;
+    max-height: 970px;
+}
+
+.kuva1 {
+    display: grid;
+    grid-column: 1 / 6;
+    grid-row: 2 / 6;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
 
