@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #8267BE;
+    background-color: #c1c1c1;
 }
 
 .container {
@@ -17,14 +17,15 @@ body {
     width: 100vw;
     height: 100vh;
     max-width: 1440px;
+    min-height: 2000px;
 }
 
 .backgroundColor {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    background-color: #3FA796;
-    border: 3px solid black;
+    background-color: #00916E;
+    border: 2px solid black;
 }
 
 .mainHeader {
@@ -32,21 +33,20 @@ body {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     z-index: 2;
-    margin-left: 136px;
-    margin-top: 64px;
-
+    margin-left: 211px;
+    margin-top: 167px;
 }
 
 .headerBox {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    height: 190px;
-    width: 564px;
-    background-color: #FFBD35;
-    margin-top: 35px;
-    margin-left: 101px;
-    border: 5px solid black;
+    height: 105px;
+    width: 784px;
+    background-color: #FFCF00;
+    margin-top: 142px;
+    margin-left: 93px;
+    border: 2px solid black;
     z-index: 1;
 }
 
@@ -54,11 +54,11 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    width: 564px;
-    height: 190px;
+    width: 784px;
+    height: 105px;
     background-color: #000000;
-    margin-top: 42px;
-    margin-left: 108px;
+    margin-top: 149px;
+    margin-left: 100px;
     z-index: 0;
 }
 
@@ -66,7 +66,7 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    margin-top: 271px;
+    margin-top: 294px;
     text-align: center;
     z-index: 2;
 }
@@ -77,10 +77,10 @@ body {
     grid-column: 2 / 3;
     width: 758px;
     height: 72px;
-    background-color: #FFBD35;
-    margin-top: 265px;
-    margin-left: 101px;
-    border: 5px solid black;
+    background-color: #FFCF00;
+    margin-top: 286px;
+    margin-left: 104px;
+    border: 2px solid black;
     z-index: 1;
 }
 
@@ -91,8 +91,8 @@ body {
     width: 758px;
     height: 72px;
     background-color: #000000;
-    margin-top: 271px;
-    margin-left: 104px;
+    margin-top: 289px;
+    margin-left: 108px;
     z-index: 0;
 }
 
@@ -121,10 +121,10 @@ body {
     grid-column: 2 / 3;
     width: 334px;
     height: 412px;
-    background-color: #FFBD35;
+    background-color: #FFCF00;
     margin-top: 383px;
     margin-left: 523px;
-    border: 5px solid black;
+    border: 2px solid black;
     z-index: 1;
 }
 
@@ -143,23 +143,26 @@ body {
 .buttonGrid {
     display: grid;
     grid-row: 1 / 2;
-    grid-column: 3 / 4;
+    grid-column: 2 / 3;
+    z-index: 1;
 }
 
 .buttonWrapper {
-    text-align: center;
-    margin-top: 265px;
+    display: flex;
+    gap: 46px;
+    margin-top: 48px;
+    margin-left: 215px;
 }
 
 .button-50 {
     appearance: button;
-    background-color: #FFBD35;
+    background-color: #DD6031;
     background-image: none;
     border: 2px solid #000;
     border-radius: 5px;
     box-shadow: rgb(0, 0, 0) 4px 4px 0 0,#000 4px 4px 0 1px;
     box-sizing: border-box;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     cursor: pointer;
     font-size: 12px;
     font-weight: 600;
@@ -175,7 +178,6 @@ body {
     -webkit-user-select: none;
     vertical-align: middle;
     white-space: nowrap;
-    margin-bottom: 25px;
   }
   
   .button-50:focus {
