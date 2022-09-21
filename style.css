@@ -5,21 +5,21 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-  
     background-color: #1f1f1f;
-  
 }
 
 .container {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 960px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin: 0 auto;
     width: 100vw;
     height: 100vh;
-    max-width: 1920px;
-    min-height: 2000px;
 }
 
 .backgroundColor {
@@ -35,20 +35,19 @@ body {
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     z-index: 2;
-    margin-left: 211px;
-    margin-top: 167px;
-    border-radius: 5px;
+    text-align: center;
+    margin-top: 363px;
 }
 
 .headerBox {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    height: 105px;
-    width: 784px;
+    height: 268px;
+    width: 1164px;
     background-color: #FFCF00;
-    margin-top: 142px;
-    margin-left: 93px;
+    margin-top: 266px;
+    margin-left: 180px;
     border: 2px solid black;
     z-index: 1;
     border-radius: 5px;
@@ -58,11 +57,11 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    width: 784px;
-    height: 105px;
+    width: 1164px;
+    height: 268px;
     background-color: #000000;
-    margin-top: 149px;
-    margin-left: 100px;
+    margin-top: 284px;
+    margin-left: 195px;
     z-index: 0;
     border-radius: 5px;
 }
@@ -71,7 +70,7 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    margin-top: 294px;
+    margin-top: 618px;
     text-align: center;
     z-index: 2;
     border-radius: 5px;
@@ -83,9 +82,9 @@ body {
     grid-column: 2 / 3;
     width: 758px;
     height: 72px;
-    background-color: #FFCF00;
-    margin-top: 286px;
-    margin-left: 104px;
+    background-color: #DD6031;
+    margin-top: 612px;
+    margin-left: 383px;
     border: 2px solid black;
     z-index: 1;
     border-radius: 5px;
@@ -98,8 +97,8 @@ body {
     width: 758px;
     height: 72px;
     background-color: #000000;
-    margin-top: 289px;
-    margin-left: 108px;
+    margin-top: 618px;
+    margin-left: 389px;
     z-index: 0;
     border-radius: 5px;
 }
@@ -108,18 +107,18 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    margin-top: 383px;
-    margin-left: 101px;
+    margin-top: 1100px;
+    margin-left: 602px;
 }
 
 .aboutText {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    width: 295px;
-    height: 364px;
-    margin-top: 407px;
-    margin-left: 546px;
+    width: 397px;
+    height: 240px;
+    margin-top: 1886px;
+    margin-left: 351px;
     z-index: 2;
 }
 
@@ -127,11 +126,11 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    width: 334px;
-    height: 412px;
-    background-color: #FFCF00;
-    margin-top: 383px;
-    margin-left: 523px;
+    width: 580px;
+    height: 330px;
+    background-color: #ffcf00;
+    margin-top: 1841px;
+    margin-left: 260px;
     border: 2px solid black;
     z-index: 1;
     border-radius: 5px;
@@ -141,14 +140,92 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    width: 334px;
-    height: 412px;
+    width: 580px;
+    height: 330px;
     background-color: #000000;
-    margin-top: 388px;
-    margin-left: 528px;
+    margin-top: 1823px;
+    margin-left: 241px;
     z-index: 0;
     border-radius: 5px;
 }
+/* 2nd Text */
+.aboutTextSecond {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 422px;
+    height: 241px;
+    margin-top: 2274px;
+    margin-left: 757px;
+    z-index: 2;
+}
+
+.secondAboutBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 580px;
+    height: 330px;
+    background-color: #DD6031;
+    margin-top: 2230px;
+    margin-left: 678px;
+    border: 2px solid black;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.secondAboutBoxBg {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 580px;
+    height: 330px;
+    background-color: #000000;
+    margin-top: 2211px;
+    margin-left: 703px;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+/* 3rd Text */
+.aboutTextThird {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 459px;
+    height: 255px;
+    margin-top: 2674px;
+    margin-left: 320px;
+    z-index: 2;
+}
+
+.thirdAboutBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 580px;
+    height: 330px;
+    background-color: #ffcf00;
+    margin-top: 2637px;
+    margin-left: 260px;
+    border: 2px solid black;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.thirdAboutBoxBg {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 580px;
+    height: 330px;
+    background-color: #000000;
+    margin-top: 2618px;
+    margin-left: 241px;
+    z-index: 0;
+    border-radius: 5px;
+}
+
 
 .buttonGrid {
     display: grid;
@@ -160,8 +237,8 @@ body {
 .buttonWrapper {
     display: flex;
     gap: 46px;
-    margin-top: 48px;
-    margin-left: 215px;
+    margin-top: 72px;
+    margin-left: 491px;
 }
 
 .button-50 {
@@ -172,7 +249,7 @@ body {
     border-radius: 5px;
     box-shadow: rgb(0, 0, 0) 4px 4px 0 0,#000 4px 4px 0 1px;
     box-sizing: border-box;
-    color: rgb(255, 255, 255);
+    color: #FEEFE5;
     cursor: pointer;
     font-size: 12px;
     font-weight: 600;
@@ -207,6 +284,18 @@ body {
     box-shadow: rgb(0, 0, 0) 2px 2px 0 0, #000 2px 2px 0 1px;
     transform: translate(2px, 2px);
   }
+
+.navBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 1524px;
+    height: 92px;
+    background-color: #FFCF00;
+    margin-top: 51px;
+    border: 2px solid black;
+    z-index: 0;
+}
   
 /* .container {
     display: grid;

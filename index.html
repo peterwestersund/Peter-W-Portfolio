@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;800&display=swap" rel="stylesheet">
     <title>Peter Westersund</title>
 </head>
 <body>
@@ -19,7 +19,7 @@
         <div class="backgroundColor"></div>
         
         <div class="mainHeader">
-            <h1 style="font-size: 60px;">
+            <h1 style="font-size: 60px; font-weight: 800; letter-spacing: 5px;">
                 Peter Westersund
             </h1>
         </div>
@@ -28,57 +28,55 @@
         <div class="headerBoxBackground"></div>
 
         <div class="titleHeader">
-            <h2 style="font-size: 50px;">&lt;web developer&gt;</h2>
+            <h2 style="font-size: 50px; color: #FEEFE5;">&lt;web developer&gt;</h2>
         </div>
         <div class="titleBox"></div>
         <div class="titleBoxBackground"></div>
-
-        <div class="selfImage">
-            <img src="/media/omakuva.png" alt="" style="height:412px; width:350px;  border: 2px solid black; border-radius: 5px;">
+        <!-- About Me section Image -->
+        <div class="selfImage" id="aboutTextFirst">
+            <img src="/media/omakuva.png" alt="" style="height:809px; width:692px; border-radius: 5px;">
         </div>
-
+        <!-- About Me section 1st txt box -->
         <div class="aboutText">
-            <p style="font-size: 20px;">
-                Driven to learn new concepts and refine my existing skills.
-                <br>
-                <br>
-                Currently, in my first year of study for my future career.
-                <br>
-                <br>
-                Interested in front-end development & UX/UI design.
-                <br>
-                <br>
-                Looking for:<br>
-                - Internship opportunities<br>
-                - Networking
-                <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p id="teksti">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatibus praesentium facilis illo modi sunt repudiandae neque autem soluta quod ullam, libero excepturi nemo iste dolor unde molestiae expedita necessitatibus.</p> -->
+            <p style="font-size: 50px; font-weight: 400;">
+                Currently, in my first year of study for my future <b>career</b>.
             </p>
         </div>
         <div class="aboutTextBox"></div>
-        <div class="aboutTextBoxBg"></div> 
+        <div class="aboutTextBoxBg"></div>
+        
+        <!-- About Me section 2nd txt box -->
+        <div class="aboutTextSecond">
+            <p style="font-size: 50px; font-weight: 400; color: #FEEFE5;">
+                <b>Driven</b> to learn new concepts and <b>refine</b> my existing skills.
+            </p>
+        </div>
+        <div class="secondAboutBox"></div>
+        <div class="secondAboutBoxBg"></div>
 
-            <div class="buttonGrid">
-                <div class="buttonWrapper">
-                    <a href="#teksti">
-                    <button class="button-50" onclick="" role="button">About Me</button>
-                    </a>
-                    <button class="button-50" role="button">My Work</button>
-                    <button class="button-50" role="button">Contact</button>
-                </div>
+        <!-- About Me section 3rd txt box -->
+        <div class="aboutTextThird">
+            <p style="font-size: 50px; font-weight: 400; color: rgb(0, 0, 0);">
+                Interested in <b>front-end</b> development & <b>UX/UI</b> design.
+            </p>
+        </div>
+        <div class="thirdAboutBox"></div>
+        <div class="thirdAboutBoxBg"></div>
+
+        <!-- Buttons -->
+        <div class="buttonGrid">
+            <div class="buttonWrapper">
+                <a href="#aboutTextFirst">
+                <button class="button-50" onclick="" role="button">About Me</button>
+                </a>
+                <button class="button-50" role="button">My Work</button>
+                <button class="button-50" role="button">Contact</button>
             </div>
+        </div>
+
+        <div class="navBox"></div>
+
+
 
           
         
