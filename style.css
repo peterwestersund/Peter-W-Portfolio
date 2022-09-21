@@ -6,7 +6,9 @@
 }
 
 body {
-    background-color: #c1c1c1;
+  
+    background-color: #232323;
+  
 }
 
 .container {
@@ -35,6 +37,7 @@ body {
     z-index: 2;
     margin-left: 211px;
     margin-top: 167px;
+    border-radius: 5px;
 }
 
 .headerBox {
@@ -48,6 +51,7 @@ body {
     margin-left: 93px;
     border: 2px solid black;
     z-index: 1;
+    border-radius: 5px;
 }
 
 .headerBoxBackground {
@@ -60,6 +64,7 @@ body {
     margin-top: 149px;
     margin-left: 100px;
     z-index: 0;
+    border-radius: 5px;
 }
 
 .titleHeader {
@@ -69,6 +74,7 @@ body {
     margin-top: 294px;
     text-align: center;
     z-index: 2;
+    border-radius: 5px;
 }
 
 .titleBox {
@@ -82,6 +88,7 @@ body {
     margin-left: 104px;
     border: 2px solid black;
     z-index: 1;
+    border-radius: 5px;
 }
 
 .titleBoxBackground {
@@ -94,6 +101,7 @@ body {
     margin-top: 289px;
     margin-left: 108px;
     z-index: 0;
+    border-radius: 5px;
 }
 
 .selfImage {
@@ -126,6 +134,7 @@ body {
     margin-left: 523px;
     border: 2px solid black;
     z-index: 1;
+    border-radius: 5px;
 }
 
 .aboutTextBoxBg {
@@ -138,6 +147,7 @@ body {
     margin-top: 388px;
     margin-left: 528px;
     z-index: 0;
+    border-radius: 5px;
 }
 
 .buttonGrid {
