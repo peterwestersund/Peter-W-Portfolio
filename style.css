@@ -73,7 +73,7 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    z-index: 2;
+    z-index: 4;
     text-align: center;
     margin-top: 363px;
 }
@@ -88,7 +88,7 @@ body {
     margin-top: 266px;
     margin-left: 180px;
     border: 2px solid black;
-    z-index: 1;
+    z-index: 3;
     border-radius: 5px;
 }
 
@@ -101,7 +101,7 @@ body {
     background-color: #000000;
     margin-top: 284px;
     margin-left: 195px;
-    z-index: 0;
+    z-index: 2;
     border-radius: 5px;
 }
 
@@ -148,7 +148,7 @@ body {
     grid-column: 2 / 3;
     margin-top: 1100px;
     margin-left: 602px;
-    z-index: 1;
+    z-index: 2;
 }
 
 .aboutText {
@@ -159,7 +159,7 @@ body {
     height: 240px;
     margin-top: 1886px;
     margin-left: 351px;
-    z-index: 2;
+    z-index: 5;
 }
 
 .aboutTextBox {
@@ -172,7 +172,7 @@ body {
     margin-top: 1841px;
     margin-left: 260px;
     border: 2px solid black;
-    z-index: 1;
+    z-index: 4;
     border-radius: 5px;
 }
 
@@ -185,7 +185,7 @@ body {
     background-color: #000000;
     margin-top: 1823px;
     margin-left: 241px;
-    z-index: 0;
+    z-index: 3;
     border-radius: 5px;
 }
 /* 2nd Text */
@@ -266,7 +266,46 @@ body {
     border-radius: 5px;
 }
 
+/* 4th Text */
+.aboutTextFourth {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 655px;
+    height: 216px;
+    margin-top: 3115px;
+    margin-left: 595px;
+    z-index: 2;
+}
 
+.fourthAboutBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 684px;
+    height: 330px;
+    background-color: #DD6031;
+    margin-top: 3063px;
+    margin-left: 566px;
+    border: 2px solid black;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.fourthAboutBoxBg {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 684px;
+    height: 330px;
+    background-color: #000000;
+    margin-top: 3044px;
+    margin-left: 595px;
+    z-index: 0;
+    border-radius: 5px;
+}
+
+/* Nav Buttons */
 .buttonGrid {
     display: grid;
     grid-row: 1 / 2;
