@@ -394,7 +394,7 @@ body {
     height: 118px;
     margin-top: 5636px;
     background-color: #FFCF00;
-    border: 2px solid black;
+    border: 5px solid black;
     z-index: 1;
 }
 
@@ -427,13 +427,13 @@ body {
     width: 692px;
     height: 40px;
     margin-top: 5675px;
-    margin-left: 419px;
+    margin-left: 407px;
     z-index: 4;
 }
 
 .footerInformation a{
     text-decoration: none;
-    color: #000
+    color: #000;
 }
 
 
