@@ -7,7 +7,7 @@
 
 html {
     scroll-behavior: smooth;
-}
+}   
 
 body {
     background-color: #1f1f1f;
@@ -374,3 +374,68 @@ body {
     border: 2px solid black;
     z-index: 0;
 }
+
+.footerRedBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 1524px;
+    height: 610px;
+    margin-top: 5390px;
+    background-color: #DD6031;
+    border: 5px solid black;
+    z-index: 0;
+}
+ .footerYellowBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 1524px;
+    height: 118px;
+    margin-top: 5636px;
+    background-color: #FFCF00;
+    border: 2px solid black;
+    z-index: 1;
+}
+
+.redBoxFooterText {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 725px;
+    height: 149px;
+    margin-top: 5295px;
+    margin-left: 399px;
+    z-index: 2;
+}
+
+.redBoxFooterTextBg {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 725px;
+    height: 149px;
+    margin-top: 5286px;
+    margin-left: 400px;
+    z-index: 1;
+}
+
+.footerInformation {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 692px;
+    height: 40px;
+    margin-top: 5675px;
+    margin-left: 419px;
+    z-index: 4;
+}
+
+.footerInformation a{
+    text-decoration: none;
+    color: #000
+}
+
+
+
+
