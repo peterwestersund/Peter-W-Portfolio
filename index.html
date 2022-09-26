@@ -11,6 +11,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+     <!-- Icon library https://ionic.io/ionicons -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+     <link rel="stylesheet" href="koe.scss">
     <title>Peter Westersund</title>
 </head>
 <body>
@@ -92,6 +96,29 @@
 
         <div class="navBox"></div>
         
+        <button onclick="topFunction()" class="button-50" id="myBtn" title="Go to top"><ion-icon name="arrow-up-outline"></ion-icon><br>Back on top</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
         <!-- Red box behind the image  + About Me header-->
         <div class="imageBackground"></div>
         
@@ -127,8 +154,6 @@
         <a href="mailto:peterwestersund@gmail.com">peterwestersund@gmail.com</a>
         </footer> 
         
-        
-
     </div>
 </body>
 </html>
