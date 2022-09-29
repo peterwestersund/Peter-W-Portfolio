@@ -462,13 +462,12 @@ body {
     text-decoration: none;
     color: #000;
 }
-
-
-
+/* Back to top button */
 #myBtn {
+    display: none;
     position: fixed;
     align-items: center;
-    z-index: 99;;
+    z-index: 99;
     margin-top: 5px;
     width: 36px;
     height: 45px;
