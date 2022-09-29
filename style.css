@@ -392,7 +392,18 @@ body {
     grid-column: 2 / 3;
     width: 1524px;
     height: 118px;
-    margin-top: 5636px;
+    margin-top: 5545px;
+    background-color: #FFCF00;
+    border: 5px solid black;
+    z-index: 1;
+}
+.footerYellowBoxSecond {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 1524px;
+    height: 118px;
+    margin-top: 5727px;
     background-color: #FFCF00;
     border: 5px solid black;
     z-index: 1;
@@ -426,8 +437,8 @@ body {
     grid-column: 2 / 3;
     width: 692px;
     height: 40px;
-    margin-top: 5675px;
-    margin-left: 407px;
+    margin-top: 5587px;
+    margin-left: 404px;
     z-index: 4;
 }
 
@@ -435,6 +446,24 @@ body {
     text-decoration: none;
     color: #000;
 }
+
+.footerInformationSecond {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 1000px;
+    height: 40px;
+    margin-top: 5766px;
+    margin-left: 387px;
+    z-index: 4;
+}
+
+.footerInformationSecond a{
+    text-decoration: none;
+    color: #000;
+}
+
+
 
 #myBtn {
     position: fixed;
