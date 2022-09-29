@@ -552,4 +552,45 @@ body {
 .perspective-text p {
     transition: all 1.0s ease-in-out;
 }
+
+
+
+.skillNotifyBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 320px;
+    height: 284px;
+    margin-top: 3787px;
+    margin-left: 1050px;
+    background-color:#FFCF00;
+    border: 2px solid black;
+    z-index: 20;
+}
+
+.skillNotifyBoxBg {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 320px;
+    height: 284px;
+    margin-top: 3761px;
+    margin-left: 1076px;
+    background-color:#000000;
+    border: 2px solid black;
+    z-index: 19;
+}
+
+.notifyTextBox {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 250px;
+    height: 206px;
+    margin-top: 3828px;
+    margin-left: 1085px;
+    z-index: 22;
+}
+
+
   
