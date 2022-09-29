@@ -304,7 +304,7 @@ body {
     border-radius: 5px;
 }
 
-/* Nav Buttons */
+/* Nav Buttons - Source code: https://getcssscan.com/css-buttons-examples */
 .buttonGrid {
     display: grid;
     grid-row: 1 / 2;
@@ -488,7 +488,7 @@ body {
     z-index: 2;
 }
 
-/* Skills list  */
+/* Skills list - Source code https://codepen.io/bosworthco/pen/YWBLpR  */
 
 .skillWrapper {
     display: grid;
