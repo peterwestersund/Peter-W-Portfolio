@@ -11,7 +11,6 @@ html {
 
 body {
     background-color: #1f1f1f;
-    text-align: center;
 }
 
 .container {
@@ -659,7 +658,7 @@ body {
     box-sizing: border-box;
     color: #FEEFE5;
     cursor: pointer;
-    font-size: 25px;
+    font-size: 35px;
     font-weight: 600;
     line-height: 20px;
     margin: 0 5px 10px 0;
