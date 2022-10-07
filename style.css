@@ -152,13 +152,15 @@ body {
     z-index: 2;
 }
 
+/* 1st About Text */
+
 .aboutText {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     width: 397px;
     height: 240px;
-    margin-top: 1886px;
+    margin-top: 2031px;
     margin-left: 351px;
     z-index: 5;
 }
@@ -170,7 +172,7 @@ body {
     width: 580px;
     height: 330px;
     background-color: #ffcf00;
-    margin-top: 1841px;
+    margin-top: 1986px;
     margin-left: 260px;
     border: 2px solid black;
     z-index: 4;
@@ -184,7 +186,7 @@ body {
     width: 580px;
     height: 330px;
     background-color: #000000;
-    margin-top: 1823px;
+    margin-top: 1968px;
     margin-left: 241px;
     z-index: 3;
     border-radius: 5px;
@@ -196,7 +198,7 @@ body {
     grid-column: 2 / 3;
     width: 422px;
     height: 241px;
-    margin-top: 2274px;
+    margin-top: 2419px;
     margin-left: 757px;
     z-index: 2;
 }
@@ -208,7 +210,7 @@ body {
     width: 580px;
     height: 330px;
     background-color: #DD6031;
-    margin-top: 2230px;
+    margin-top: 2375px;
     margin-left: 678px;
     border: 2px solid black;
     z-index: 1;
@@ -222,7 +224,7 @@ body {
     width: 580px;
     height: 330px;
     background-color: #000000;
-    margin-top: 2211px;
+    margin-top: 2356px;
     margin-left: 703px;
     z-index: 0;
     border-radius: 5px;
@@ -235,7 +237,7 @@ body {
     grid-column: 2 / 3;
     width: 459px;
     height: 255px;
-    margin-top: 2674px;
+    margin-top: 2819px;
     margin-left: 320px;
     z-index: 2;
 }
@@ -247,7 +249,7 @@ body {
     width: 580px;
     height: 330px;
     background-color: #ffcf00;
-    margin-top: 2637px;
+    margin-top: 2782px;
     margin-left: 260px;
     border: 2px solid black;
     z-index: 1;
@@ -261,7 +263,7 @@ body {
     width: 580px;
     height: 330px;
     background-color: #000000;
-    margin-top: 2618px;
+    margin-top: 2763px;
     margin-left: 241px;
     z-index: 0;
     border-radius: 5px;
@@ -274,8 +276,8 @@ body {
     grid-column: 2 / 3;
     width: 655px;
     height: 216px;
-    margin-top: 3115px;
-    margin-left: 595px;
+    margin-top: 3226px;
+    margin-left: 640px;
     z-index: 2;
 }
 
@@ -283,11 +285,11 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    width: 684px;
+    width: 580px;
     height: 330px;
     background-color: #DD6031;
-    margin-top: 3063px;
-    margin-left: 566px;
+    margin-top: 3186px;
+    margin-left: 678px;
     border: 2px solid black;
     z-index: 1;
     border-radius: 5px;
@@ -297,11 +299,11 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-    width: 684px;
+    width: 580px;
     height: 330px;
     background-color: #000000;
-    margin-top: 3044px;
-    margin-left: 595px;
+    margin-top: 3167px;
+    margin-left: 703px;
     z-index: 0;
     border-radius: 5px;
 }
@@ -518,9 +520,116 @@ body {
     z-index: 2;
 }
 
+/* SKILLS PIE CHART - Source code: https://codepen.io/t_afif/pen/XWaPXZO */
+
+.pieChart {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 3830px;
+    z-index: 10;
+
+}
+
+.pieChartFlex {
+    display: flex;
+    justify-content: center;
+    gap: 80px
+}
+
+@property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+    
+  }
+  
+  .pie {
+    --p:20;
+    --b:20px;
+    --c:darkred;
+    --w:180px;
+    
+    width:var(--w);
+    aspect-ratio: 1;
+    position:relative;
+    display:inline-grid;
+    place-content:center;
+    font-size:25px;
+    border-radius: 200px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  .pie:before,
+  .pie:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+
+  .pie:before {
+    inset:0;
+    background:
+    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+    mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+
+  .pie:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+    
+  }
+
+  .animate {
+    animation:p 2s .5s both;
+  }
+
+  .no-round:before {
+    background-size:0 0,auto;
+    
+  }
+
+  .no-round:after {
+    content:none;
+  }
+
+  @keyframes p {
+    from{--p:0}
+  }
+
+  .skillsText{
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    width: 910px;
+    height: 212px;
+    margin-top: 4102px;
+    margin-left: 307px;
+    z-index: 10;
+  }
+
+/*  Text Reveal - Source code: https://codepen.io/alvarotrigo/pen/PoKamZy */
+
+  .reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+  }
+  
+  .reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  
+  
 /* Skills list - Source code https://codepen.io/bosworthco/pen/YWBLpR  */
 
-.skillWrapper {
+/* .skillWrapper {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
@@ -620,7 +729,7 @@ body {
     margin-top: 3815px;
     margin-left: 1085px;
     z-index: 22;
-}
+} */
 /* MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA  */
 
 @media screen and (max-width: 650px)  {

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,35 +45,35 @@
         </div>
 
         <!-- About Me section 1st txt box -->
-        <div class="aboutText">
+        <div class="aboutText reveal">
             <p style="font-size: 50px; font-weight: 400;">
                 Currently, in my first year of study for my future <b>career</b>.
             </p>
         </div>
-        <div class="aboutTextBox"></div>
-        <div class="aboutTextBoxBg"></div>
+        <div class="aboutTextBox reveal"></div>
+        <div class="aboutTextBoxBg reveal"></div>
         
         <!-- About Me section 2nd txt box -->
-        <div class="aboutTextSecond">
+        <div class="aboutTextSecond reveal">
             <p style="font-size: 50px; font-weight: 400; color: #FEEFE5;">
                 <b>Driven</b> to learn new concepts and <b>refine</b> my existing skills.
             </p>
         </div>
-        <div class="secondAboutBox"></div>
-        <div class="secondAboutBoxBg"></div>
+        <div class="secondAboutBox reveal"></div>
+        <div class="secondAboutBoxBg reveal"></div>
 
         <!-- About Me section 3rd txt box -->
-        <div class="aboutTextThird">
+        <div class="aboutTextThird reveal">
             <p style="font-size: 50px; font-weight: 400; color: rgb(0, 0, 0);">
                 Interested in <b>front-end</b> development & <b>UX/UI</b> design.
             </p>
         </div>
-        <div class="thirdAboutBox"></div>
-        <div class="thirdAboutBoxBg"></div>
+        <div class="thirdAboutBox reveal"></div>
+        <div class="thirdAboutBoxBg reveal"></div>
 
         <!-- About Me section 4th txt box -->
-        <div class="aboutTextFourth">
-            <p style="font-size: 50px; font-weight: 500; color: #FEEFE5; line-height: 150%; text-align: center;">
+        <div class="aboutTextFourth reveal">
+            <p style="font-size: 44px; font-weight: 500; color: #FEEFE5; line-height: 150%; text-align: center;">
                 <b>I'm looking for</b>:<br>
                 <span
                 class="txt-rotate"
@@ -141,8 +141,8 @@
             };
         </script>
 
-        <div class="fourthAboutBox"></div>
-        <div class="fourthAboutBoxBg"></div>
+        <div class="fourthAboutBox reveal"></div>
+        <div class="fourthAboutBoxBg reveal"></div>
 
         <!-- Buttons -->
         <div class="buttonGrid">
@@ -203,7 +203,7 @@
         </div>
 
         <!-- Skills section begins --> 
-        <div class="skillWrapper">
+        <!-- <div class="skillWrapper">
             <div class="perspective-text" style="font-family: Montserrat; font-weight: 800; font-size:90px; line-height: 100px;">
                 <div class="perspective-line">
                 <p style="color:#FFCF00;">HTML</p>
@@ -226,7 +226,7 @@
                 <p></p>
                 </div>
             </div>
-        </div>
+        </div> -->
           
         <div class="skillsRedBox"></div>
 
@@ -242,13 +242,28 @@
             </h2>
         </div>
 
-        <div class="notifyTextBox">
+        <!-- <div class="notifyTextBox">
             <h2>Psst!</h2>
             <p style="font-size: 25px; font-weight: 400; color: rgb(0, 0, 0); line-height: 50px;">Hover over them to find out more!</p>
         </div>
         <div class="skillNotifyBox"></div>
-        <div class="skillNotifyBoxBg"></div>
+        <div class="skillNotifyBoxBg"></div> -->
+        
+        <div class="pieChart reveal">
+            <div class="pieChartWrapper reveal">
+                <div class="pieChartFlex reveal" style="font-weight: 500;">
+                    <div class="pie animate no-round" style="--p:80;--c:#FFCF00; color:#f3f3f3">HTML5</div>
+                    <div class="pie no-round anima" style="--p:80;--c:#FFCF00; color:#f3f3f3">CSS3</div>
+                    <div class="pie animate no-round" style="--p:70;--c:#FFCF00; color:#f3f3f3">JS</div>
+                    <div class="pie animate no-round" style="--p:75;--c:#FFCF00; color:#f3f3f3">Figma</div>
+                </div>
+            </div>
+        </div>
 
+        <div class="skillsText reveal" style="font-size: 30px; font-weight: 400; line-height: 219%; color:#FEEFE5;">
+            <p>I’m competent user of macOS, Windows, iOS and Android.<br>
+                I used HTML, CSS & Vanilla JavaScript to make this website,<br> and I designed it using Figma.</p>
+        </div>
 
         <!-- footer -->
         <div class="footerRedBox"></div>
@@ -274,9 +289,9 @@
         <!-- LinkedIn -->
         <footer class="footerInformationSecond" style="font-size: 40px; letter-spacing: 5px;">
             <a href="https://www.linkedin.com/in/peter-westersund/">linkedin.com/peter-westersund</a>
-            </footer> 
+        </footer> 
 
-       
+       <script src="main.js"></script>
 
 
         
