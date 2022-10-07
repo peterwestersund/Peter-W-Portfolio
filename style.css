@@ -443,7 +443,7 @@ body {
     height: 40px;
     margin-top: 5587px;
     margin-left: 404px;
-    z-index: 4;
+    z-index: 99;
 }
 
 .footerInformation a{
@@ -459,7 +459,7 @@ body {
     height: 40px;
     margin-top: 5766px;
     margin-left: 387px;
-    z-index: 4;
+    z-index: 99;
 }
 
 .footerInformationSecond a{

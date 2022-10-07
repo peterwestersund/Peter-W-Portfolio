@@ -18,6 +18,9 @@ function reveal() {
 
 
   
+// Skills Animate On Scroll
+
+
   let elementHtml = document.querySelector('#elementHtml');
   let observerHtml = new IntersectionObserver(entries => {
   elementHtml.classList.toggle('animate', entries[0].isIntersecting
