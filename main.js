@@ -15,13 +15,48 @@ function reveal() {
   }
   
   window.addEventListener("scroll", reveal);
+
+
   
-  const element = document.querySelector('.pie');
-  let observer = new IntersectionObserver(entries => {
-  element.classList.toggle('animate', entries[0].isIntersecting
+  let elementHtml = document.querySelector('#elementHtml');
+  let observerHtml = new IntersectionObserver(entries => {
+  elementHtml.classList.toggle('animate', entries[0].isIntersecting
    );
 
   
   });
   
-  observer.observe( element );
+  observerHtml.observe( elementHtml );
+
+
+  let elementCss = document.querySelector('#elementCss');
+  let observerCss = new IntersectionObserver(entries => {
+  elementCss.classList.toggle('animate', entries[0].isIntersecting
+   );
+
+  
+  });
+  
+  observerCss.observe( elementCss );
+
+  let elementJs = document.querySelector('#elementJs');
+  let observerJs = new IntersectionObserver(entries => {
+  elementJs.classList.toggle('animate', entries[0].isIntersecting
+   );
+
+  
+  });
+  
+  observerJs.observe( elementJs );
+
+
+  let elementFigma = document.querySelector('#elementFigma');
+  let observerFigma = new IntersectionObserver(entries => {
+  elementFigma.classList.toggle('animate', entries[0].isIntersecting
+   );
+
+  
+  });
+  
+  observerFigma.observe( elementFigma );
+

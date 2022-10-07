@@ -565,6 +565,7 @@ body {
     content:"";
     position:absolute;
     border-radius:50%;
+    
   }
 
   .pie:before {
@@ -586,6 +587,7 @@ body {
   .animate {
     animation:p 2s .5s both;
   }
+
 
   .no-round:before {
     background-size:0 0,auto;
@@ -624,6 +626,8 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+
+  
 
   
   
