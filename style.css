@@ -867,7 +867,7 @@ body {
 }
 /* MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA  */
 
-@media screen and (max-width: 768px)  {
+/* @media screen and (max-width: 768px)  {
 
 .container {
     display: grid;
@@ -1219,7 +1219,7 @@ body {
   /* ---------------------------------------------- */
                 /* FOOTER FOOTER FOOTER */
   /* ---------------------------------------------- */
-
+/* 
 .footerRedBox {
     margin-top: 550em;
 }
@@ -1310,4 +1310,4 @@ body {
 
 
 
-}
+}  */
