@@ -979,7 +979,7 @@ body {
 
 }
 
-@media screen and (min-width: 320px) and (max-width:1000px){
+@media screen and (min-width: 320px) and (max-width:900px){
 
 .container {
     display: grid;
@@ -1007,6 +1007,7 @@ body {
 .mainHeader {
     margin-top: 11%;
     margin-left: 40%;
+    overflow: hidden;
     
 
 }
@@ -1014,15 +1015,14 @@ body {
 .headerBox {
     margin-top: 5%;
     margin-left: 25%;
-    overflow: hidden;
-    
-    
-  
+
+    max-width: 1145px;
 }
+
 .headerBoxBackground{
     margin-top: 6%;
     margin-left: 25%;
-    
+    max-width: 1145px;
     overflow: hidden;
     
 }
