@@ -11,8 +11,6 @@ html {
 
 body {
     background-color: #1f1f1f;
-    width: 100%;
-    
 }
 
 .container {
@@ -534,7 +532,7 @@ body {
 .pieChartFlex {
     display: flex;
     justify-content: center;
-    gap: 80px
+    gap: 80px;
 }
 
 @property --p{
@@ -588,7 +586,6 @@ body {
     animation:p 2s .5s both;
   }
 
-
   .no-round:before {
     background-size:0 0,auto;
     
@@ -611,6 +608,7 @@ body {
     margin-top: 4102px;
     margin-left: 307px;
     z-index: 10;
+    font-size: 30px;
   }
 
 /*  Text Reveal - Source code: https://codepen.io/alvarotrigo/pen/PoKamZy */
@@ -730,7 +728,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -webkit-font-kerning: normal;
     -webkit-text-size-adjust: 100%;
-    width: 610px;
+    width: 500px;
     height: 300px;
     
 }
@@ -843,9 +841,33 @@ body {
     margin-left: 1085px;
     z-index: 22;
 } */
+
+.asPersonHeader {
+    display: none;
+}
+
+.asPersonHeaderBlack {
+    display: none;
+}
+
+.asPersonText {
+    display: none;
+}
+
+.asWorkerHeader {
+    display: none;
+}
+
+.asWorkerHeaderBlack {
+    display: none;
+}
+
+.asWorkerText {
+    display: none;
+}
 /* MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA  */
 
-@media screen and (max-width: 650px)  {
+@media screen and (max-width: 768px)  {
 
 .container {
     display: grid;
@@ -957,7 +979,7 @@ body {
 
 }
 
-@media screen and (min-width: 320px) and (max-width:380px) {
+@media screen and (min-width: 320px) and (max-width:425px) {
 
 .container {
     display: grid;
@@ -985,17 +1007,22 @@ body {
 .mainHeader {
     margin-top: 11%;
     margin-left: 40%;
+    
+
 }
+
 .headerBox {
     margin-top: 5%;
     margin-left: 25%;
     overflow: hidden;
+    
     
   
 }
 .headerBoxBackground{
     margin-top: 6%;
     margin-left: 25%;
+    
     overflow: hidden;
     
 }
@@ -1031,7 +1058,7 @@ body {
     grid-column: 2 / 3;
     height: 200px;
     z-index: 5;
-    margin-left: 40%;
+    margin-left: 38em;
 } 
 
 .buttonWrapper {
@@ -1084,16 +1111,213 @@ body {
 }
 
 .aboutTextFourth {
-    margin-left: 48%;
+    margin-left: 52.5%;
 }
 
 .fourthAboutBox {
-    margin-left: 47%;
+    margin-left: 55%;
 }
 
 .fourthAboutBoxBg {
-    margin-left: 48%;
+    margin-left: 56%;
 }
+
+.skillsRedBoxText {
+    margin-left: 41%;
+}
+
+.skillsRedBoxTextBg {
+    margin-left: 40%;
+}
+
+.pieChartFlex{
+    display: grid;
+    margin-left: 610px;
+}
+
+@property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+    
+  }
+  
+  .pie {
+    --p:30;
+    --b:30px;
+    --c:darkred;
+    --w:300px;
+    
+    width:var(--w);
+    aspect-ratio: 1;
+    position:relative;
+    display:inline-grid;
+    place-content:center;
+    font-size:35px;
+    border-radius: 200px;
+    box-shadow: 5px 5px 10px black;
+  }
+
+  .pie:before,
+  .pie:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+    
+  }
+
+  .pie:before {
+    inset:0;
+    background:
+    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+    mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+
+  .pie:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+    
+  }
+
+  .animate {
+    animation:p 2s .5s both;
+  }
+
+  .no-round:before {
+    background-size:0 0,auto;
+    
+  }
+
+  .no-round:after {
+    content:none;
+  }
+
+  @keyframes p {
+    from{--p:0}
+  }
+
+
+  .skillsRedBox{
+    height: 2800px;
+  }
+
+  .skillWrapper{
+    display: none;
+  }
+
+  .skillsText {
+
+    margin-left: 42.5%;
+    margin-top: 90.5em;
+    font-size: 60px;
+    width: 800px;
+    text-align:justify;
+  }
+
+
+ 
+
+
+
+  /* ---------------------------------------------- */
+                /* FOOTER FOOTER FOOTER */
+  /* ---------------------------------------------- */
+
+.footerRedBox {
+    margin-top: 550em;
+}
+.footerYellowBoxSecond {
+    margin-top: 560em;
+}
+
+.footerYellowBox {
+    margin-top: 570em;
+}
+
+.redBoxFooterText {
+    margin-top: 545em;
+    margin-left: 47%;
+}
+
+.redBoxFooterTextBg {
+    margin-top: 544.5em;
+    margin-left: 47%;
+}
+
+.footerInformation {
+    margin-top: 225em;
+    margin-left: 46%;
+    width: 800px;
+}
+
+.footerInformationSecond {
+    margin-top: 229em;
+    margin-left: 44.5%;
+    width: 800px;
+ 
+}
+
+.asPersonHeader{
+    display: inline-grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 415em;
+    margin-left: 42.5%;
+    z-index: 99;
+}
+
+.asPersonHeaderBlack{
+    display: inline-grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 416em;
+    margin-left: 42%;
+    z-index: 98;
+}
+
+.asPersonText {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 114em;
+    margin-left: 50%;
+    z-index: 10;
+    font-size: 60px;
+    width: 800px;
+}
+
+.asWorkerHeader{
+    display: inline-grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 475em;
+    margin-left: 42.5%;
+    z-index: 99;
+}
+
+.asWorkerHeaderBlack{
+    display: inline-grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 476em;
+    margin-left: 42%;
+    z-index: 98;
+}
+
+.asWorkerText {
+    display: grid;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin-top: 130em;
+    margin-left: 50%;
+    z-index: 10;
+    font-size: 60px;
+    width: 800px;
+}
+
 
 
 
