@@ -802,6 +802,15 @@ body {
     -webkit-text-stroke: 2px #000;
   }
   
+  #pleaserotate-backdrop {
+    color: #FEEFE5;;
+    background-color: #000;
+}
+
+#pleaserotate-graphic{
+    fill:#FEEFE5;;
+}
+
 
 
 /*
@@ -842,7 +851,7 @@ body {
     z-index: 22;
 } */
 
-.asPersonHeader {
+/* .asPersonHeader {
     display: none;
 }
 
@@ -864,7 +873,7 @@ body {
 
 .asWorkerText {
     display: none;
-}
+} */
 /* MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA MEDIA  */
 
 /* @media screen and (max-width: 768px)  {
