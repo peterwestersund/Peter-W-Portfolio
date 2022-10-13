@@ -1,3 +1,15 @@
+
+$(".skillRotateBtn").click(function() {
+  $('.transform').toggleClass('transform-active');
+});
+
+
+
+//------------------------
+// Reveal
+//------------------------
+
+
 function reveal() {
     let reveals = document.querySelectorAll(".reveal");
   
@@ -17,9 +29,9 @@ function reveal() {
   window.addEventListener("scroll", reveal);
 
 
-  
-// Skills Animate On Scroll
-
+//------------------------------
+// Skills Animate On Scroll 
+//------------------------------
 
   let elementHtml = document.querySelector('#elementHtml');
   let observerHtml = new IntersectionObserver(entries => {
@@ -62,5 +74,3 @@ function reveal() {
   });
   
   observerFigma.observe( elementFigma );
-
-

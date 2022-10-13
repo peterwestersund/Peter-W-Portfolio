@@ -17,7 +17,8 @@
     <title>Peter Westersund</title>
 </head>
 <body>
-
+    <script src="pleaserotate.js"></script>
+    <script src="main.js"></script>
     
     <!-- GRID -->
     <div class="container">
@@ -227,43 +228,44 @@
                 </div>
             </div>
         </div> -->
-        <div class="skillWrapper reveal">
+        <div class="skillWrapper">
            
-            <ul class="Words reveal">
-                <li class="Words-line reveal">
-                  <p>&nbsp;</p>
-                  <p class="skillStroke" style="color:#FFCF00; font-family: Bungee; font-weight: 400; font-size: 50px; text-shadow: -6px 0px 0px #000000;">AS A CO-WORKER</p>
+            <ul class="Words">
+                <li class="Words-line">
+                  <p class="transform">&nbsp;</p>
+                  <p class="transform" style="">AS A CO-WORKER</p>
                 </li>
                 <li class="Words-line">
-                  <p class="skillStroke" style="color:#FFCF00; font-family: Bungee; font-weight: 400; font-size:50px; text-shadow: -6px 0px 0px #000000;">AS A PERSON</p>
-                  <p></p>
+                  <p class="transform" style="">AS A PERSON</p>
+                  <p class="transform"></p>
                 </li>
                 <li class="Words-line">
-                  <p></p>
-                  <p style="color:#FEEFE5;">Cooperative</p>
+                  <p class="transform"></p>
+                  <p class="transform">Cooperative</p>
                 </li>
                 <li class="Words-line">
-                  <p style="color:#FEEFE5;">Calm</p>
-                  <p>Focused</p>
+                  <p  class="transform">Calm</p>
+                  <p class="transform">Focused</p>
                 </li>
                 <li class="Words-line">
-                  <p>Contemplative</p>
-                  <p style="color:#FEEFE5;">Independent</p>
+                  <p class="transform">Contemplative</p>
+                  <p  class="transform">Independent</p>
                 </li>
                 <li class="Words-line">
-                  <p style="color:#FEEFE5;">Detail orientated</p>
-                  <p>Reliable</p>
+                  <p class="transform">Detail orientated</p>
+                  <p class="transform">Reliable</p>
                 </li>
                 <li class="Words-line">
-                  <p>Determined</p>
-                  <p style="color:#FEEFE5;">Studious</p>
+                  <p class="transform">Determined</p>
+                  <p  class="transform">Studious</p>
                 </li>
                 <li class="Words-line">
-                    <p style="color:#FEEFE5;">Musician</p>
-                    <p>&nbsp;</p>
+                    <p  class="transform">Creative</p>
+                    <p class="transform">&nbsp;</p>
                   </li>
+                 
               </ul>
-            
+              
         </div>
           
         <div class="skillsRedBox"></div>
@@ -330,9 +332,16 @@
             <a href="https://www.linkedin.com/in/peter-westersund/">linkedin.com/peter-westersund</a>
         </footer> 
         
+        <div class="skillRotateWrap">
+            <input type="button" class="skillRotateBtn" value="Click Me"></input>
+            <script>$(".skillRotateBtn").click(function() {
+                $('.transform').toggleClass('transform-active');
+              });</script>
+        </div>
+
 
     </div>
 
-    <script src="pleaserotate.js"></script>
+   
 </body>
 </html>
