@@ -17,8 +17,9 @@
     <title>Peter Westersund</title>
 </head>
 <body>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
     <script src="pleaserotate.js"></script>
-    <script src="main.js"></script>
     
     <!-- GRID -->
     <div class="container">
@@ -228,42 +229,45 @@
                 </div>
             </div>
         </div> -->
-        <div class="skillWrapper">
+        <div class="skillWrapper reveal">
            
-            <ul class="Words">
-                <li class="Words-line">
+            <ul class="Words reveal">
+                <li class="Words-line reveal">
                   <p class="transform">&nbsp;</p>
-                  <p class="transform" style="">AS A CO-WORKER</p>
+                  <p class="skillStroke transform" style="color:#FFCF00; font-family: Bungee; font-weight: 400; font-size: 50px; text-shadow: -6px 0px 0px #000000;">AS A CO-WORKER</p>
                 </li>
                 <li class="Words-line">
-                  <p class="transform" style="">AS A PERSON</p>
+                  <p class="skillStroke transform" style="color:#FFCF00; font-family: Bungee; font-weight: 400; font-size:50px; text-shadow: -6px 0px 0px #000000;">AS A PERSON</p>
                   <p class="transform"></p>
                 </li>
                 <li class="Words-line">
-                  <p class="transform"></p>
-                  <p class="transform">Cooperative</p>
+                  <p class="transfrom"></p>
+                  <p class="transform" style="color:#FEEFE5;">Cooperative</p>
                 </li>
                 <li class="Words-line">
-                  <p  class="transform">Calm</p>
+                  <p class="transform" style="color:#FEEFE5;">Calm</p>
                   <p class="transform">Focused</p>
                 </li>
                 <li class="Words-line">
                   <p class="transform">Contemplative</p>
-                  <p  class="transform">Independent</p>
+                  <p class="transform" style="color:#FEEFE5;">Independent</p>
                 </li>
                 <li class="Words-line">
-                  <p class="transform">Detail orientated</p>
+                  <p class="transform" style="color:#FEEFE5;">Detail orientated</p>
                   <p class="transform">Reliable</p>
                 </li>
                 <li class="Words-line">
                   <p class="transform">Determined</p>
-                  <p  class="transform">Studious</p>
+                  <p class="transform" style="color:#FEEFE5;">Studious</p>
                 </li>
                 <li class="Words-line">
-                    <p  class="transform">Creative</p>
+                    <p  class="transform" style="color:#FEEFE5;">Creative</p>
                     <p class="transform">&nbsp;</p>
                   </li>
-                 
+
+                  <script>$(".skillRotateBtn").click(function() {
+                    $('.transform').toggleClass('transform-active');
+                  });</script>
               </ul>
               
         </div>
@@ -333,7 +337,7 @@
         </footer> 
         
         <div class="skillRotateWrap">
-            <input type="button" class="skillRotateBtn" value="Click Me"></input>
+            <input type="button" class="skillRotateBtn" value="Who Am I?"></input>
             <script>$(".skillRotateBtn").click(function() {
                 $('.transform').toggleClass('transform-active');
               });</script>

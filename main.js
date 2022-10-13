@@ -1,10 +1,4 @@
 
-$(".skillRotateBtn").click(function() {
-  $('.transform').toggleClass('transform-active');
-});
-
-
-
 //------------------------
 // Reveal
 //------------------------
