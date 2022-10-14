@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -83,65 +83,7 @@
                 data-rotate='[ "Internship opportunities", "Networking" ]'></span>
             </p>
         </div>
-        <!--Typing Animation - Source code: https://codepen.io/gschier/pen/DLmXKJ -->
-        <script>
-            var TxtRotate = function(el, toRotate, period) {
-            this.toRotate = toRotate;
-            this.el = el;
-            this.loopNum = 0;
-            this.period = parseInt(period, 10) || 2000;
-            this.txt = '';
-            this.tick();
-            this.isDeleting = false;
-            };
-
-            TxtRotate.prototype.tick = function() {
-            var i = this.loopNum % this.toRotate.length;
-            var fullTxt = this.toRotate[i];
-
-            if (this.isDeleting) {
-                this.txt = fullTxt.substring(0, this.txt.length - 1);
-            } else {
-                this.txt = fullTxt.substring(0, this.txt.length + 1);
-            }
-
-            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-            var that = this;
-            var delta = 300 - Math.random() * 250;
-
-            if (this.isDeleting) { delta /= 2; }
-
-            if (!this.isDeleting && this.txt === fullTxt) {
-                delta = this.period;
-                this.isDeleting = true;
-            } else if (this.isDeleting && this.txt === '') {
-                this.isDeleting = false;
-                this.loopNum++;
-                delta = 500;
-            }
-
-            setTimeout(function() {
-                that.tick();
-            }, delta);
-            };
-
-            window.onload = function() {
-            var elements = document.getElementsByClassName('txt-rotate');
-            for (var i=0; i<elements.length; i++) {
-                var toRotate = elements[i].getAttribute('data-rotate');
-                var period = elements[i].getAttribute('data-period');
-                if (toRotate) {
-                new TxtRotate(elements[i], JSON.parse(toRotate), period);
-                }
-            }
-            // INJECT CSS
-            var css = document.createElement("style");
-            css.type = "text/css";
-            css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
-            document.body.appendChild(css);
-            };
-        </script>
+        
 
         <div class="fourthAboutBox reveal"></div>
         <div class="fourthAboutBoxBg reveal"></div>
@@ -165,29 +107,8 @@
         
         <!-- Back to top button starts - Source code: https://www.w3schools.com/HOWTO/howto_js_scroll_to_top.asp -->
         <div class="topButtonWrapper">
-            <button onclick="topFunction()" class="button-50" id="myBtn" title="Go to top"><ion-icon name="arrow-up-outline" style="color: black; font-size: 23px; text-align: center;"></ion-icon><br></button>
+            <button onclick="topFunction()" class="button-50" id="myBtn" title="Go to top"><ion-icon name="arrow-up-outline" style="color: black; font-size: 40px; text-align: center;"></ion-icon><br></button>
         </div>
-        <script>
-            // Get the button
-            let mybutton = document.getElementById("myBtn");
-            
-            // When the user scrolls down 20px from the top of the document, show the button
-            window.onscroll = function() {scrollFunction()};
-            
-            function scrollFunction() {
-              if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
-                mybutton.style.display = "block";
-              } else {
-                mybutton.style.display = "none";
-              }
-            }
-            
-            // When the user clicks on the button, scroll to the top of the document
-            function topFunction() {
-              document.body.scrollTop = 0;
-              document.documentElement.scrollTop = 0;
-            }
-            </script>
         
         <!-- Red box behind the image  + About Me header-->
         <div class="imageBackground"></div>
@@ -203,32 +124,7 @@
                 About Me
             </h1>
         </div>
-
-        <!-- Skills section begins --> 
-        <!-- <div class="skillWrapper">
-            <div class="perspective-text" style="font-family: Montserrat; font-weight: 800; font-size:90px; line-height: 100px;">
-                <div class="perspective-line">
-                <p style="color:#FFCF00;">HTML</p>
-                <p style="color:#FFCF00;">OSX</p>
-                </div>
-                <div class="perspective-line">
-                <p>CSS</p>
-                <p>WINDOWS</p>
-                </div>
-                <div class="perspective-line">
-                <p style="color:#FFCF00; margin-left: 5px;">Javascript</p>
-                <p style="color:#FFCF00;">Figma</p>
-                </div>
-                <div class="perspective-line">
-                <p style="font-size: 15px; font-weight: 400;">I used <b>HTML</b>, <b>CSS</b> & Vanilla <b>Javascript</b> to make this website,</p>
-                <p style="font-size: 15px; font-weight: 400;">and I designed it using Figma. Mobile version coming soon!</p>
-                </div>
-                <div class="perspective-line">
-                <p></p>
-                <p></p>
-                </div>
-            </div>
-        </div> -->
+        
         <div class="skillWrapper reveal">
            
             <ul class="Words reveal">
@@ -264,10 +160,6 @@
                     <p  class="transform" style="color:#FEEFE5;">Creative</p>
                     <p class="transform">&nbsp;</p>
                   </li>
-
-                  <script>$(".skillRotateBtn").click(function() {
-                    $('.transform').toggleClass('transform-active');
-                  });</script>
               </ul>
               
         </div>
@@ -285,13 +177,6 @@
                 Skills
             </h2>
         </div>
-
-        <!-- <div class="notifyTextBox">
-            <h2>Psst!</h2>
-            <p style="font-size: 25px; font-weight: 400; color: rgb(0, 0, 0); line-height: 50px;">Hover over them to find out more!</p>
-        </div>
-        <div class="skillNotifyBox"></div>
-        <div class="skillNotifyBoxBg"></div> -->
         
         <div class="pieChart reveal">
             <div class="pieChartWrapper reveal">
