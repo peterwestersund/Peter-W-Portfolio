@@ -36,8 +36,13 @@
         <div class="headerBoxBackground"></div>
 
         <div class="titleHeader">
-            <h2 style="font-size: 50px; color: #FEEFE5;">&lt;web developer&gt;</h2>
+            <h2 style="font-size: 50px; color: #FEEFE5;">&lt;
+                <span
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate='["junior web developer","Looking for: Internship opportunities"]'></span> &gt;</h2>
         </div>
+        
         <div class="titleBox"></div>
         <div class="titleBoxBackground"></div>
         
@@ -75,12 +80,8 @@
 
         <!-- About Me section 4th txt box -->
         <div class="aboutTextFourth reveal">
-            <p style="font-size: 44px; font-weight: 500; color: #FEEFE5; line-height: 150%; text-align: center;">
-                <b>I'm looking for</b>:<br>
-                <span
-                class="txt-rotate"
-                data-period="2000"
-                data-rotate='[ "Internship opportunities", "Networking" ]'></span>
+            <p style="font-size: 50px; font-weight: 400; color: #FEEFE5; line-height: 150%;">
+                Eager to <b>learn</b> new tools and technologies.<br>
             </p>
         </div>
         
@@ -92,13 +93,13 @@
         <div class="buttonGrid">
             <div class="buttonWrapper">
                 <a href="#about">
-                <button class="button-50" role="button">About Me</button>
+                <button class="button-50 btnPress" role="button">About Me</button>
                 </a>
                 <a href="#skills">
-                <button class="button-50" role="button">Skills</button>
+                <button class="button-50 btnPress" role="button">Skills</button>
                 </a>
                 <a href="#contact">
-                <button class="button-50" role="button">Contact</button>
+                <button class="button-50 btnPress" role="button">Contact</button>
                 </a>
             </div>
         </div>
@@ -107,7 +108,7 @@
         
         <!-- Back to top button starts - Source code: https://www.w3schools.com/HOWTO/howto_js_scroll_to_top.asp -->
         <div class="topButtonWrapper">
-            <button onclick="topFunction()" class="button-50" id="myBtn" title="Go to top"><ion-icon name="arrow-up-outline" style="color: black; font-size: 40px; text-align: center;"></ion-icon><br></button>
+            <button onclick="topFunction()" class="button-50 btnPress" id="myBtn" title="Go to top"><ion-icon name="arrow-up-outline" style="color: black; font-size: 40px; text-align: center;"></ion-icon><br></button>
         </div>
         
         <!-- Red box behind the image  + About Me header-->
@@ -222,7 +223,7 @@
         </footer> 
         
         <div class="skillRotateWrap reveal">
-            <input type="button" class="skillRotateBtn sample" value="Who Am I?">
+            <input type="button" class="skillRotateBtn btnPress" value="Who Am I?">
             <script>$(".skillRotateBtn").click(function() {
                 $('.transform').toggleClass('transform-active');
               });</script>
