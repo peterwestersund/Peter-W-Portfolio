@@ -1080,7 +1080,7 @@ left: 87px;
 
 .sample:active {
 	transform: scale(0.9);
-	transition: .1s;
+	transition: .2s;
 }
 
 
