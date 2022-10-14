@@ -991,7 +991,7 @@ left: 87px;
 */
 .skillWrapper p {
   height: 55px;
-  /* line-height: 5 5px; */
+  line-height: 55px;
   padding: 0 10px;
   -webkit-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
